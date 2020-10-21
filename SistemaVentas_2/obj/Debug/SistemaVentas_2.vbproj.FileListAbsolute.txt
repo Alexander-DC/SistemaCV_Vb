@@ -1,0 +1,16 @@
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\bin\Debug\SistemaVentas_2.exe
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\bin\Debug\SistemaVentas_2.pdb
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\bin\Debug\SistemaVentas_2.xml
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.vbprojAssemblyReference.cache
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.Resources.resources
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.vbproj.GenerateResource.cache
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.vbproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.vbproj.CopyComplete
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.exe
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.xml
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.pdb
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.forLogin.resources
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.forDashboard.resources
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.forTrabajadores.resources
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.forClientes.resources
