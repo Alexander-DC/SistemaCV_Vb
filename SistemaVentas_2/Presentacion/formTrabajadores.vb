@@ -5,11 +5,14 @@ Imports System.Data
 Public Class forTrabajadores
     Dim mantenimiento As Integer
     Dim IMAGEN As String
+    Dim imagenDefecto As String
 
     Private Sub forTrabajadores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dgvTraListado.DataSource = funcionListadoTrabajadores()
         txtFechaIngreso.Text = Date.Now
         txtFechaIngreso.Enabled = False
+        imagenDefecto = ".\Imagenes\usuario\foto_defecto.jpg"
+        picImagen.Load(imagenDefecto)
 
     End Sub
 
@@ -122,10 +125,7 @@ Public Class forTrabajadores
                 cmd.ExecuteNonQuery()
                 MsgBox("Registrado correctamente", vbInformation, "Registrado")
 
-                dgvTraListado.DataSource = funcionListadoTrabajadores()
-                mantenimiento = 0
-                metodoBotonDesbloquear()
-
+                metodoTerminado()
                 Exit Sub
             Case 2
                 Dim cn As New SqlConnection("server=(Local); database=SistemaVenta5; integrated security=SSPI")
@@ -172,17 +172,21 @@ Public Class forTrabajadores
                 cmd.ExecuteNonQuery()
                 MsgBox("Editado correctamente", vbInformation, "Editado")
 
-                dgvTraListado.DataSource = funcionListadoTrabajadores()
-                mantenimiento = 0
-                metodoBotonDesbloquear()
+                metodoTerminado()
                 Exit Sub
         End Select
 
     End Sub
-
-    Private Sub btnIconCancelar_Click(sender As Object, e As EventArgs) Handles btnIconCancelar.Click
+    Public Sub metodoTerminado()
+        mantenimiento = 0
         metodoBotonDesbloquear()
+        labEncabezado.Text = ""
+        dgvTraListado.DataSource = funcionListadoTrabajadores()
+    End Sub
+    Private Sub btnIconCancelar_Click(sender As Object, e As EventArgs) Handles btnIconCancelar.Click
         txtFechaIngreso.Text = ""
+        metodoTerminado()
+
     End Sub
 
     Private Sub btnIconBuscar_Click(sender As Object, e As EventArgs) Handles btnIconBuscar.Click
@@ -244,18 +248,21 @@ Public Class forTrabajadores
     End Sub
 
     Private Sub btnIconLimpiar_Click(sender As Object, e As EventArgs) Handles btnIconLimpiar.Click
-        txtApePaterno.Text=""
+        metodoTerminado()
+
+
+        txtApePaterno.Text = ""
         txtApeMaterno.Text = ""
         txtNombre.Text = ""
         cboGenero.Text = ""
         cboTipoDoc.Text = ""
-        txtNDoc.Text=""
+        txtNDoc.Text = ""
         txtDireccion.Text = ""
         txtTel1.Text = ""
         txtTel2.Text = ""
         txtFechaIngreso.Text = ""
-        picImagen.Image = Nothing
-
+        'picImagen.Image = Nothing
+        picImagen.Load(imagenDefecto)
         cboRol.Text = ""
         cboEstado.Text = ""
         txtUsuario.Text = ""
