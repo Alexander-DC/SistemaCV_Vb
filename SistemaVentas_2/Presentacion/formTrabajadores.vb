@@ -280,8 +280,9 @@ Public Class forTrabajadores
                     Dim aleatorio As Integer = CInt(Int((99999 * Rnd()) + 1))
                     Dim nombrefinal As String = aleatorio & "_" & fecha & "_" & nombreOriginal
 
-                    System.IO.File.Copy(Me.OpenFileDialog1.FileName, "C:\Imagenes\usuario\" & nombrefinal)
-                    IMAGEN = "C:\Imagenes\usuario\" & nombrefinal
+                    IMAGEN = ".\Imagenes\usuario\" & nombrefinal
+                    System.IO.File.Copy(Me.OpenFileDialog1.FileName, IMAGEN)
+
                     MsgBox(IMAGEN)
                     picImagen.Load(IMAGEN)
                 Else
