@@ -122,6 +122,7 @@ Public Class forTrabajadores
                 cmd.ExecuteNonQuery()
                 MsgBox("Registrado correctamente", vbInformation, "Registrado")
 
+                dgvTraListado.DataSource = funcionListadoTrabajadores()
                 mantenimiento = 0
                 metodoBotonDesbloquear()
 
@@ -171,11 +172,12 @@ Public Class forTrabajadores
                 cmd.ExecuteNonQuery()
                 MsgBox("Editado correctamente", vbInformation, "Editado")
 
+                dgvTraListado.DataSource = funcionListadoTrabajadores()
                 mantenimiento = 0
                 metodoBotonDesbloquear()
                 Exit Sub
         End Select
-        dgvTraListado.DataSource = funcionListadoTrabajadores()
+
     End Sub
 
     Private Sub btnIconCancelar_Click(sender As Object, e As EventArgs) Handles btnIconCancelar.Click
@@ -264,27 +266,34 @@ Public Class forTrabajadores
     'Metodo que selecciona una imagen y la carga en un PictureBox'
     Sub cargarImagen()
         Try
-            Me.OpenFileDialog1.ShowDialog()
-            If Me.OpenFileDialog1.FileName <> "" Then
 
-                IMAGEN = OpenFileDialog1.FileName
+            Me.OpenFileDialog1.Title = "Seleccione Imagen"
+            Me.OpenFileDialog1.Filter = "JPG|*.jpg;*.jpeg|PNG|*.png|GIF|*.gif|PDF|*.pdf"
 
-                Dim largo As Integer = IMAGEN.Length
-                Dim imagen2 As String
-                imagen2 = CStr(Microsoft.VisualBasic.Mid(RTrim(IMAGEN), largo - 2, largo))
-                If imagen2 <> "gif" And imagen2 <> "bmp" And imagen2 <> "jpg" And imagen2 <> "jpeg" And imagen2 <> "GIF" And imagen2 <> "BMP" And imagen2 <> "JPG" And imagen2 <> "JPEG" Then
-                    imagen2 = CStr(Microsoft.VisualBasic.Mid(RTrim(IMAGEN), largo - 3, largo))
-                    If imagen2 <> "jpeg" And imagen2 <> "JPEG" And imagen2 <> "log1" Then
-                        MsgBox("Formato no valido") : Exit Sub
-                        If imagen2 <> "log1" Then Exit Sub
-                    End If
+            If Me.OpenFileDialog1.ShowDialog() = Windows.Forms.DialogResult.OK Then
+                Dim extension As String = System.IO.Path.GetExtension(Me.OpenFileDialog1.FileName)
+                If extension = ".jpg" Or extension = ".png" Or extension = ".gif" Then
+
+                    Dim nombreOriginal As String = System.IO.Path.GetFileName(Me.OpenFileDialog1.FileName)
+                    Dim fecha As String = Date.Today()
+                    fecha = fecha.Replace("/", "_")
+                    Dim aleatorio As Integer = CInt(Int((99999 * Rnd()) + 1))
+                    Dim nombrefinal As String = aleatorio & "_" & fecha & "_" & nombreOriginal
+
+                    System.IO.File.Copy(Me.OpenFileDialog1.FileName, "C:\Imagenes\usuario\" & nombrefinal)
+                    IMAGEN = "C:\Imagenes\usuario\" & nombrefinal
+                    MsgBox(IMAGEN)
                     picImagen.Load(IMAGEN)
+                Else
+                    MsgBox("El formato es incorrecto")
                 End If
+            Else
+                MsgBox("No soleccione nada")
             End If
-            MsgBox(IMAGEN)
+
         Catch ex As Exception
         End Try
-        picImagen.Load(IMAGEN)
+
     End Sub
     Private Sub btnAgregarImagen_Click(sender As Object, e As EventArgs) Handles btnAgregarImagen.Click
         cargarImagen()
