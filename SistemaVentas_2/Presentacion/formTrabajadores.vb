@@ -403,4 +403,35 @@ Public Class forTrabajadores
         'dgvTraListado.DataSource = funcionBuscarTabla()
 
     End Sub
+
+    Private Sub dgvTraListado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvTraListado.CellDoubleClick
+        txtApePaterno.Text = dgvTraListado.CurrentRow.Cells(5).Value.ToString()
+        txtApeMaterno.Text = dgvTraListado.CurrentRow.Cells(6).Value.ToString()
+        txtNombre.Text = dgvTraListado.CurrentRow.Cells(4).Value.ToString()
+        cboGenero.Text = dgvTraListado.CurrentRow.Cells(7).Value.ToString()
+        cboTipoDoc.Text = dgvTraListado.CurrentRow.Cells(8).Value.ToString()
+        txtNDoc.Text = dgvTraListado.CurrentRow.Cells(9).Value.ToString()
+        txtDireccion.Text = dgvTraListado.CurrentRow.Cells(11).Value.ToString()
+        txtTel1.Text = dgvTraListado.CurrentRow.Cells(12).Value.ToString()
+        txtTel2.Text = dgvTraListado.CurrentRow.Cells(13).Value.ToString()
+        txtFechaIngreso.Text = dgvTraListado.CurrentRow.Cells(10).Value.ToString()
+        picImagen.Load(dgvTraListado.CurrentRow.Cells(16).Value.ToString())
+
+        cboRol.Text = dgvTraListado.CurrentRow.Cells(2).Value.ToString()
+        'cboEstado.Text = dgvTraListado.CurrentRow.Cells(1).Value.ToString()
+        txtUsuario.Text = dgvTraListado.CurrentRow.Cells(14).Value.ToString()
+        txtClave.Text = dgvTraListado.CurrentRow.Cells(15).Value.ToString()
+
+
+        Select Case dgvTraListado.CurrentRow.Cells(1).Value.ToString()
+            Case "True"
+                cboEstado.Text = "Activado"
+            Case "False"
+                cboEstado.Text = "Desactivado"
+        End Select
+
+
+        tabTrabajadores.SelectTab(1)
+
+    End Sub
 End Class
