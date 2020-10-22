@@ -27,6 +27,7 @@ Partial Class forTrabajadores
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.tabTrabajadores = New System.Windows.Forms.TabControl()
         Me.tabTraListado = New System.Windows.Forms.TabPage()
+        Me.lblUsuarioTotal = New System.Windows.Forms.Label()
         Me.dgvTraListado = New System.Windows.Forms.DataGridView()
         Me.btnTraBuscar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -102,6 +103,7 @@ Partial Class forTrabajadores
         'tabTraListado
         '
         Me.tabTraListado.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.tabTraListado.Controls.Add(Me.lblUsuarioTotal)
         Me.tabTraListado.Controls.Add(Me.dgvTraListado)
         Me.tabTraListado.Controls.Add(Me.btnTraBuscar)
         Me.tabTraListado.Controls.Add(Me.Label1)
@@ -113,6 +115,18 @@ Partial Class forTrabajadores
         Me.tabTraListado.Size = New System.Drawing.Size(1020, 608)
         Me.tabTraListado.TabIndex = 0
         Me.tabTraListado.Text = "Listado"
+        '
+        'lblUsuarioTotal
+        '
+        Me.lblUsuarioTotal.AutoSize = True
+        Me.lblUsuarioTotal.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblUsuarioTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsuarioTotal.ForeColor = System.Drawing.Color.White
+        Me.lblUsuarioTotal.Location = New System.Drawing.Point(653, 34)
+        Me.lblUsuarioTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblUsuarioTotal.Name = "lblUsuarioTotal"
+        Me.lblUsuarioTotal.Size = New System.Drawing.Size(0, 18)
+        Me.lblUsuarioTotal.TabIndex = 8
         '
         'dgvTraListado
         '
@@ -137,6 +151,7 @@ Partial Class forTrabajadores
         Me.dgvTraListado.Location = New System.Drawing.Point(27, 91)
         Me.dgvTraListado.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvTraListado.Name = "dgvTraListado"
+        Me.dgvTraListado.ReadOnly = True
         Me.dgvTraListado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
@@ -991,4 +1006,5 @@ Partial Class forTrabajadores
     Friend WithEvents Label12 As Label
     Friend WithEvents btnIconLimpiar As FontAwesome.Sharp.IconButton
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents lblUsuarioTotal As Label
 End Class
