@@ -35,29 +35,34 @@ Public Class forLogin
 
         'Declarando si hay datos en la tabla, y login por categoria
         If dr.Read = True Then
-            'Enviando datos al MODULO
-            pasarLogin.usuario = txtUsuario.Text.Trim
+            If dr(4) = 0 Then
+                MsgBox("Su cuenta se encuentra deshabilidada")
+                Exit Sub
+            Else
+                'Enviando datos al MODULO
+                pasarLogin.usuario = txtUsuario.Text.Trim
 
-            cod_categoria = dr(2)
-            nom_categoria = dr(3)
-            Select Case cod_categoria
-                Case 1
-                    MessageBox.Show("Bienvenido " & nom_categoria)
-                    Me.Hide()
-                    forDashboard.Show()
-                Case 2
-                    MessageBox.Show("Bienvenido " & nom_categoria)
-                    Me.Hide()
-                    forDashboard.Show()
-            End Select
+                cod_categoria = dr(2)
+                nom_categoria = dr(3)
+                Select Case cod_categoria
+                    Case 1
+                        'Administrador
+                        MessageBox.Show("Bienvenido " & nom_categoria)
+                        Me.Hide()
+                        forDashboard.Show()
+                    Case 2
+                        'Cajero
+                        MessageBox.Show("Bienvenido " & nom_categoria)
+                        Me.Hide()
+                        forDashboard.Show()
+                End Select
+            End If
 
         Else
             MessageBox.Show("Ingrese correctamente")
         End If
         'Cerrar conexion
         cn.Close()
-
-
 
     End Sub
 
