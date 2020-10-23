@@ -26,7 +26,15 @@ Public Class forDashboard
             labRol.Text = dr(17)
         End If
         cn.Close()
+        '__________________________Bloqueo
 
+        Select Case pasarLogin.id_rol
+            Case 1
+                Exit Sub
+            Case 2
+                btnIconSubTrabajadores.Visible = False
+                Exit Sub
+        End Select
         '--------------------------Imagen circular
         Dim pic As New Drawing2D.GraphicsPath
         pic.AddEllipse(2, 2, 50, 50)

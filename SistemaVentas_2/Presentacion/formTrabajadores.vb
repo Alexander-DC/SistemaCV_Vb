@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 Imports System.Data
 
 Public Class forTrabajadores
-    Dim mantenimiento As Integer
+    Dim mantenimiento As Integer 'Accion Activar(Nuevo, Guardar)
     Dim IMAGEN As String
     Dim imagenDefecto As String
 
@@ -142,7 +142,7 @@ Public Class forTrabajadores
 
     Private Sub btnIconEditar_Click(sender As Object, e As EventArgs) Handles btnIconEditar.Click
         mantenimiento = 2
-        labEncabezado.Text = "Modo Editar"
+        labEncabezado.Text = "Modo Editar ID: " & txtIdCodigo.Text
         metodoBotonBloquear()
     End Sub
 
@@ -405,6 +405,8 @@ Public Class forTrabajadores
     End Sub
 
     Private Sub dgvTraListado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvTraListado.CellDoubleClick
+
+        txtIdCodigo.Text = dgvTraListado.CurrentRow.Cells(0).Value.ToString()
         txtApePaterno.Text = dgvTraListado.CurrentRow.Cells(5).Value.ToString()
         txtApeMaterno.Text = dgvTraListado.CurrentRow.Cells(6).Value.ToString()
         txtNombre.Text = dgvTraListado.CurrentRow.Cells(4).Value.ToString()
@@ -415,6 +417,8 @@ Public Class forTrabajadores
         txtTel1.Text = dgvTraListado.CurrentRow.Cells(12).Value.ToString()
         txtTel2.Text = dgvTraListado.CurrentRow.Cells(13).Value.ToString()
         txtFechaIngreso.Text = dgvTraListado.CurrentRow.Cells(10).Value.ToString()
+
+        IMAGEN = dgvTraListado.CurrentRow.Cells(16).Value.ToString()
         picImagen.Load(dgvTraListado.CurrentRow.Cells(16).Value.ToString())
 
         cboRol.Text = dgvTraListado.CurrentRow.Cells(2).Value.ToString()

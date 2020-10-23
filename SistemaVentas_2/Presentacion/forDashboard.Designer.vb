@@ -56,9 +56,9 @@ Partial Class forDashboard
         Me.panMenu.Controls.Add(Me.panLogo)
         Me.panMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.panMenu.Location = New System.Drawing.Point(0, 0)
-        Me.panMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.panMenu.Name = "panMenu"
-        Me.panMenu.Size = New System.Drawing.Size(195, 687)
+        Me.panMenu.Size = New System.Drawing.Size(195, 761)
         Me.panMenu.TabIndex = 0
         '
         'panMenuUsuarios
@@ -68,7 +68,7 @@ Partial Class forDashboard
         Me.panMenuUsuarios.Controls.Add(Me.btnIconSubClientes)
         Me.panMenuUsuarios.Dock = System.Windows.Forms.DockStyle.Top
         Me.panMenuUsuarios.Location = New System.Drawing.Point(0, 228)
-        Me.panMenuUsuarios.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panMenuUsuarios.Margin = New System.Windows.Forms.Padding(2)
         Me.panMenuUsuarios.Name = "panMenuUsuarios"
         Me.panMenuUsuarios.Size = New System.Drawing.Size(195, 103)
         Me.panMenuUsuarios.TabIndex = 5
@@ -89,7 +89,7 @@ Partial Class forDashboard
         Me.btnIconSubTrabajadores.IconSize = 32
         Me.btnIconSubTrabajadores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnIconSubTrabajadores.Location = New System.Drawing.Point(0, 49)
-        Me.btnIconSubTrabajadores.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnIconSubTrabajadores.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIconSubTrabajadores.Name = "btnIconSubTrabajadores"
         Me.btnIconSubTrabajadores.Padding = New System.Windows.Forms.Padding(26, 0, 16, 0)
         Me.btnIconSubTrabajadores.Rotation = 0R
@@ -116,7 +116,7 @@ Partial Class forDashboard
         Me.btnIconSubClientes.IconSize = 32
         Me.btnIconSubClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnIconSubClientes.Location = New System.Drawing.Point(0, 0)
-        Me.btnIconSubClientes.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnIconSubClientes.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIconSubClientes.Name = "btnIconSubClientes"
         Me.btnIconSubClientes.Padding = New System.Windows.Forms.Padding(26, 0, 16, 0)
         Me.btnIconSubClientes.Rotation = 0R
@@ -143,7 +143,7 @@ Partial Class forDashboard
         Me.btnIconMenuUsuarios.IconSize = 32
         Me.btnIconMenuUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnIconMenuUsuarios.Location = New System.Drawing.Point(0, 179)
-        Me.btnIconMenuUsuarios.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnIconMenuUsuarios.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIconMenuUsuarios.Name = "btnIconMenuUsuarios"
         Me.btnIconMenuUsuarios.Padding = New System.Windows.Forms.Padding(8, 0, 16, 0)
         Me.btnIconMenuUsuarios.Rotation = 0R
@@ -170,7 +170,7 @@ Partial Class forDashboard
         Me.btnIconMenuDashboard.IconSize = 32
         Me.btnIconMenuDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnIconMenuDashboard.Location = New System.Drawing.Point(0, 130)
-        Me.btnIconMenuDashboard.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnIconMenuDashboard.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIconMenuDashboard.Name = "btnIconMenuDashboard"
         Me.btnIconMenuDashboard.Padding = New System.Windows.Forms.Padding(8, 0, 16, 0)
         Me.btnIconMenuDashboard.Rotation = 0R
@@ -186,7 +186,7 @@ Partial Class forDashboard
         Me.panLogo.Controls.Add(Me.PictureBox1)
         Me.panLogo.Dock = System.Windows.Forms.DockStyle.Top
         Me.panLogo.Location = New System.Drawing.Point(0, 0)
-        Me.panLogo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panLogo.Margin = New System.Windows.Forms.Padding(2)
         Me.panLogo.Name = "panLogo"
         Me.panLogo.Size = New System.Drawing.Size(195, 130)
         Me.panLogo.TabIndex = 2
@@ -195,7 +195,7 @@ Partial Class forDashboard
         '
         Me.PictureBox1.Image = Global.SistemaVentas_2.My.Resources.Resources.mauvi
         Me.PictureBox1.Location = New System.Drawing.Point(8, 21)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(158, 97)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -212,9 +212,9 @@ Partial Class forDashboard
         Me.panEncabezado.Controls.Add(Me.labMenu)
         Me.panEncabezado.Dock = System.Windows.Forms.DockStyle.Top
         Me.panEncabezado.Location = New System.Drawing.Point(195, 0)
-        Me.panEncabezado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panEncabezado.Margin = New System.Windows.Forms.Padding(2)
         Me.panEncabezado.Name = "panEncabezado"
-        Me.panEncabezado.Size = New System.Drawing.Size(960, 65)
+        Me.panEncabezado.Size = New System.Drawing.Size(1089, 65)
         Me.panEncabezado.TabIndex = 1
         '
         'IconPictureBox1
@@ -224,7 +224,7 @@ Partial Class forDashboard
         Me.IconPictureBox1.IconColor = System.Drawing.Color.White
         Me.IconPictureBox1.IconSize = 40
         Me.IconPictureBox1.Location = New System.Drawing.Point(22, 11)
-        Me.IconPictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.IconPictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.IconPictureBox1.Name = "IconPictureBox1"
         Me.IconPictureBox1.Size = New System.Drawing.Size(41, 40)
         Me.IconPictureBox1.TabIndex = 4
@@ -234,8 +234,8 @@ Partial Class forDashboard
         '
         Me.picUsuarioEncabezado.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.picUsuarioEncabezado.Image = Global.SistemaVentas_2.My.Resources.Resources.Anotación_2020_05_17_164239
-        Me.picUsuarioEncabezado.Location = New System.Drawing.Point(692, 7)
-        Me.picUsuarioEncabezado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.picUsuarioEncabezado.Location = New System.Drawing.Point(821, 7)
+        Me.picUsuarioEncabezado.Margin = New System.Windows.Forms.Padding(2)
         Me.picUsuarioEncabezado.Name = "picUsuarioEncabezado"
         Me.picUsuarioEncabezado.Size = New System.Drawing.Size(72, 53)
         Me.picUsuarioEncabezado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -248,7 +248,7 @@ Partial Class forDashboard
         Me.labRol.AutoSize = True
         Me.labRol.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labRol.ForeColor = System.Drawing.Color.White
-        Me.labRol.Location = New System.Drawing.Point(780, 37)
+        Me.labRol.Location = New System.Drawing.Point(909, 37)
         Me.labRol.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.labRol.Name = "labRol"
         Me.labRol.Size = New System.Drawing.Size(23, 13)
@@ -262,7 +262,7 @@ Partial Class forDashboard
         Me.labUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.labUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labUsuario.ForeColor = System.Drawing.Color.White
-        Me.labUsuario.Location = New System.Drawing.Point(768, 11)
+        Me.labUsuario.Location = New System.Drawing.Point(897, 11)
         Me.labUsuario.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.labUsuario.Name = "labUsuario"
         Me.labUsuario.Size = New System.Drawing.Size(115, 17)
@@ -287,20 +287,20 @@ Partial Class forDashboard
         Me.panForHijo.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.panForHijo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panForHijo.Location = New System.Drawing.Point(195, 65)
-        Me.panForHijo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.panForHijo.Margin = New System.Windows.Forms.Padding(2)
         Me.panForHijo.Name = "panForHijo"
-        Me.panForHijo.Size = New System.Drawing.Size(960, 622)
+        Me.panForHijo.Size = New System.Drawing.Size(1089, 696)
         Me.panForHijo.TabIndex = 2
         '
         'forDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1155, 687)
+        Me.ClientSize = New System.Drawing.Size(1284, 761)
         Me.Controls.Add(Me.panForHijo)
         Me.Controls.Add(Me.panEncabezado)
         Me.Controls.Add(Me.panMenu)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "forDashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Dashboard"

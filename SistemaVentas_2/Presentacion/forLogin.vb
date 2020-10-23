@@ -30,8 +30,8 @@ Public Class forLogin
         Dim dr As SqlDataReader
         dr = cmd.ExecuteReader
 
-        Dim cod_categoria As String
-        Dim nom_categoria As String
+        Dim id_rol As String
+        Dim nom_rol As String
 
         'Declarando si hay datos en la tabla, y login por categoria
         If dr.Read = True Then
@@ -41,23 +41,23 @@ Public Class forLogin
             Else
                 'Enviando datos al MODULO
                 pasarLogin.usuario = txtUsuario.Text.Trim
+                id_rol = dr(2)
+                nom_rol = dr(3)
+                pasarLogin.id_rol = id_rol
 
-                cod_categoria = dr(2)
-                nom_categoria = dr(3)
-                Select Case cod_categoria
+                Select Case id_rol
                     Case 1
                         'Administrador
-                        MessageBox.Show("Bienvenido " & nom_categoria)
+                        MessageBox.Show("Bienvenido " & nom_rol)
                         Me.Hide()
                         forDashboard.Show()
                     Case 2
                         'Cajero
-                        MessageBox.Show("Bienvenido " & nom_categoria)
+                        MessageBox.Show("Bienvenido " & nom_rol)
                         Me.Hide()
                         forDashboard.Show()
                 End Select
             End If
-
         Else
             MessageBox.Show("Ingrese correctamente")
         End If
