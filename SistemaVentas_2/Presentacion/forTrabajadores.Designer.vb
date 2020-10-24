@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class forClientes
+Partial Class forTrabajadores
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -25,13 +25,7 @@ Partial Class forClientes
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.tabTrabajadores = New System.Windows.Forms.TabControl()
-        Me.tabTraListado = New System.Windows.Forms.TabPage()
-        Me.lblUsuarioTotal = New System.Windows.Forms.Label()
-        Me.dgvTraListado = New System.Windows.Forms.DataGridView()
-        Me.btnTraBuscar = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtTraBuscar = New System.Windows.Forms.TextBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.tabTraMantenimiento = New System.Windows.Forms.TabPage()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.btnAgregarImagen = New System.Windows.Forms.Button()
@@ -69,6 +63,13 @@ Partial Class forClientes
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.tabTraListado = New System.Windows.Forms.TabPage()
+        Me.lblUsuarioTotal = New System.Windows.Forms.Label()
+        Me.dgvTraListado = New System.Windows.Forms.DataGridView()
+        Me.btnTraBuscar = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtTraBuscar = New System.Windows.Forms.TextBox()
+        Me.tabTrabajadores = New System.Windows.Forms.TabControl()
         Me.btnIconLimpiar = New FontAwesome.Sharp.IconButton()
         Me.btnIconBuscar = New FontAwesome.Sharp.IconButton()
         Me.btnIconEliminar = New FontAwesome.Sharp.IconButton()
@@ -77,137 +78,19 @@ Partial Class forClientes
         Me.btnIconEditar = New FontAwesome.Sharp.IconButton()
         Me.btnIconNuevo = New FontAwesome.Sharp.IconButton()
         Me.picImagen = New System.Windows.Forms.PictureBox()
-        Me.tabTrabajadores.SuspendLayout()
-        Me.tabTraListado.SuspendLayout()
-        CType(Me.dgvTraListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabTraMantenimiento.SuspendLayout()
         Me.gboAcceso.SuspendLayout()
         Me.gboTraAcceso.SuspendLayout()
         Me.gboDatos.SuspendLayout()
+        Me.tabTraListado.SuspendLayout()
+        CType(Me.dgvTraListado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tabTrabajadores.SuspendLayout()
         CType(Me.picImagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'tabTrabajadores
+        'OpenFileDialog1
         '
-        Me.tabTrabajadores.Controls.Add(Me.tabTraListado)
-        Me.tabTrabajadores.Controls.Add(Me.tabTraMantenimiento)
-        Me.tabTrabajadores.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tabTrabajadores.Location = New System.Drawing.Point(21, 30)
-        Me.tabTrabajadores.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tabTrabajadores.Name = "tabTrabajadores"
-        Me.tabTrabajadores.SelectedIndex = 0
-        Me.tabTrabajadores.Size = New System.Drawing.Size(1371, 785)
-        Me.tabTrabajadores.TabIndex = 1
-        '
-        'tabTraListado
-        '
-        Me.tabTraListado.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.tabTraListado.Controls.Add(Me.lblUsuarioTotal)
-        Me.tabTraListado.Controls.Add(Me.dgvTraListado)
-        Me.tabTraListado.Controls.Add(Me.btnTraBuscar)
-        Me.tabTraListado.Controls.Add(Me.Label1)
-        Me.tabTraListado.Controls.Add(Me.txtTraBuscar)
-        Me.tabTraListado.Location = New System.Drawing.Point(4, 29)
-        Me.tabTraListado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tabTraListado.Name = "tabTraListado"
-        Me.tabTraListado.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tabTraListado.Size = New System.Drawing.Size(1363, 752)
-        Me.tabTraListado.TabIndex = 0
-        Me.tabTraListado.Text = "Listado"
-        '
-        'lblUsuarioTotal
-        '
-        Me.lblUsuarioTotal.AutoSize = True
-        Me.lblUsuarioTotal.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.lblUsuarioTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUsuarioTotal.ForeColor = System.Drawing.Color.White
-        Me.lblUsuarioTotal.Location = New System.Drawing.Point(871, 42)
-        Me.lblUsuarioTotal.Name = "lblUsuarioTotal"
-        Me.lblUsuarioTotal.Size = New System.Drawing.Size(0, 24)
-        Me.lblUsuarioTotal.TabIndex = 8
-        '
-        'dgvTraListado
-        '
-        Me.dgvTraListado.AllowUserToAddRows = False
-        Me.dgvTraListado.AllowUserToDeleteRows = False
-        Me.dgvTraListado.AllowUserToOrderColumns = True
-        Me.dgvTraListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.dgvTraListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.dgvTraListado.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgvTraListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(204, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvTraListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvTraListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvTraListado.EnableHeadersVisualStyles = False
-        Me.dgvTraListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(183, Byte), Integer))
-        Me.dgvTraListado.Location = New System.Drawing.Point(36, 112)
-        Me.dgvTraListado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.dgvTraListado.Name = "dgvTraListado"
-        Me.dgvTraListado.ReadOnly = True
-        Me.dgvTraListado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(183, Byte), Integer))
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvTraListado.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
-        Me.dgvTraListado.RowHeadersWidth = 51
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(183, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
-        Me.dgvTraListado.RowsDefaultCellStyle = DataGridViewCellStyle6
-        Me.dgvTraListado.RowTemplate.Height = 24
-        Me.dgvTraListado.Size = New System.Drawing.Size(1291, 566)
-        Me.dgvTraListado.TabIndex = 7
-        '
-        'btnTraBuscar
-        '
-        Me.btnTraBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.btnTraBuscar.FlatAppearance.BorderSize = 0
-        Me.btnTraBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal
-        Me.btnTraBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnTraBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTraBuscar.ForeColor = System.Drawing.Color.White
-        Me.btnTraBuscar.Location = New System.Drawing.Point(637, 42)
-        Me.btnTraBuscar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnTraBuscar.Name = "btnTraBuscar"
-        Me.btnTraBuscar.Size = New System.Drawing.Size(157, 38)
-        Me.btnTraBuscar.TabIndex = 6
-        Me.btnTraBuscar.Text = "Buscar"
-        Me.btnTraBuscar.UseVisualStyleBackColor = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(32, 21)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 24)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Buscador"
-        '
-        'txtTraBuscar
-        '
-        Me.txtTraBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.txtTraBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtTraBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTraBuscar.ForeColor = System.Drawing.SystemColors.Window
-        Me.txtTraBuscar.Location = New System.Drawing.Point(36, 57)
-        Me.txtTraBuscar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtTraBuscar.Name = "txtTraBuscar"
-        Me.txtTraBuscar.Size = New System.Drawing.Size(563, 23)
-        Me.txtTraBuscar.TabIndex = 5
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'tabTraMantenimiento
         '
@@ -243,7 +126,7 @@ Partial Class forClientes
         'btnAgregarImagen
         '
         Me.btnAgregarImagen.Location = New System.Drawing.Point(48, 439)
-        Me.btnAgregarImagen.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnAgregarImagen.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.btnAgregarImagen.Name = "btnAgregarImagen"
         Me.btnAgregarImagen.Size = New System.Drawing.Size(241, 34)
         Me.btnAgregarImagen.TabIndex = 11
@@ -714,6 +597,128 @@ Partial Class forClientes
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Apellido Materno"
         '
+        'tabTraListado
+        '
+        Me.tabTraListado.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.tabTraListado.Controls.Add(Me.lblUsuarioTotal)
+        Me.tabTraListado.Controls.Add(Me.dgvTraListado)
+        Me.tabTraListado.Controls.Add(Me.btnTraBuscar)
+        Me.tabTraListado.Controls.Add(Me.Label1)
+        Me.tabTraListado.Controls.Add(Me.txtTraBuscar)
+        Me.tabTraListado.Location = New System.Drawing.Point(4, 29)
+        Me.tabTraListado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tabTraListado.Name = "tabTraListado"
+        Me.tabTraListado.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tabTraListado.Size = New System.Drawing.Size(1363, 752)
+        Me.tabTraListado.TabIndex = 0
+        Me.tabTraListado.Text = "Listado"
+        '
+        'lblUsuarioTotal
+        '
+        Me.lblUsuarioTotal.AutoSize = True
+        Me.lblUsuarioTotal.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblUsuarioTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsuarioTotal.ForeColor = System.Drawing.Color.White
+        Me.lblUsuarioTotal.Location = New System.Drawing.Point(871, 42)
+        Me.lblUsuarioTotal.Name = "lblUsuarioTotal"
+        Me.lblUsuarioTotal.Size = New System.Drawing.Size(0, 24)
+        Me.lblUsuarioTotal.TabIndex = 8
+        '
+        'dgvTraListado
+        '
+        Me.dgvTraListado.AllowUserToAddRows = False
+        Me.dgvTraListado.AllowUserToDeleteRows = False
+        Me.dgvTraListado.AllowUserToOrderColumns = True
+        Me.dgvTraListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgvTraListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.dgvTraListado.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvTraListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(204, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvTraListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.dgvTraListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvTraListado.EnableHeadersVisualStyles = False
+        Me.dgvTraListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(183, Byte), Integer))
+        Me.dgvTraListado.Location = New System.Drawing.Point(36, 112)
+        Me.dgvTraListado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgvTraListado.Name = "dgvTraListado"
+        Me.dgvTraListado.ReadOnly = True
+        Me.dgvTraListado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(183, Byte), Integer))
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvTraListado.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgvTraListado.RowHeadersWidth = 51
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(183, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
+        Me.dgvTraListado.RowsDefaultCellStyle = DataGridViewCellStyle6
+        Me.dgvTraListado.RowTemplate.Height = 24
+        Me.dgvTraListado.Size = New System.Drawing.Size(1291, 566)
+        Me.dgvTraListado.TabIndex = 7
+        '
+        'btnTraBuscar
+        '
+        Me.btnTraBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.btnTraBuscar.FlatAppearance.BorderSize = 0
+        Me.btnTraBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal
+        Me.btnTraBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnTraBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTraBuscar.ForeColor = System.Drawing.Color.White
+        Me.btnTraBuscar.Location = New System.Drawing.Point(637, 42)
+        Me.btnTraBuscar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnTraBuscar.Name = "btnTraBuscar"
+        Me.btnTraBuscar.Size = New System.Drawing.Size(157, 38)
+        Me.btnTraBuscar.TabIndex = 6
+        Me.btnTraBuscar.Text = "Buscar"
+        Me.btnTraBuscar.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(32, 21)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(90, 24)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Buscador"
+        '
+        'txtTraBuscar
+        '
+        Me.txtTraBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(129, Byte), Integer))
+        Me.txtTraBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtTraBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTraBuscar.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtTraBuscar.Location = New System.Drawing.Point(36, 57)
+        Me.txtTraBuscar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTraBuscar.Name = "txtTraBuscar"
+        Me.txtTraBuscar.Size = New System.Drawing.Size(563, 23)
+        Me.txtTraBuscar.TabIndex = 5
+        '
+        'tabTrabajadores
+        '
+        Me.tabTrabajadores.Controls.Add(Me.tabTraListado)
+        Me.tabTrabajadores.Controls.Add(Me.tabTraMantenimiento)
+        Me.tabTrabajadores.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tabTrabajadores.Location = New System.Drawing.Point(21, 30)
+        Me.tabTrabajadores.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tabTrabajadores.Name = "tabTrabajadores"
+        Me.tabTrabajadores.SelectedIndex = 0
+        Me.tabTrabajadores.Size = New System.Drawing.Size(1371, 785)
+        Me.tabTrabajadores.TabIndex = 0
+        '
         'btnIconLimpiar
         '
         Me.btnIconLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(20, Byte), Integer))
@@ -904,20 +909,17 @@ Partial Class forClientes
         Me.picImagen.TabIndex = 10
         Me.picImagen.TabStop = False
         '
-        'forClientes
+        'forTrabajadores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1434, 853)
         Me.Controls.Add(Me.tabTrabajadores)
-        Me.Name = "forClientes"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "forClientes"
-        Me.tabTrabajadores.ResumeLayout(False)
-        Me.tabTraListado.ResumeLayout(False)
-        Me.tabTraListado.PerformLayout()
-        CType(Me.dgvTraListado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Name = "forTrabajadores"
+        Me.Text = "formTrabajadores"
         Me.tabTraMantenimiento.ResumeLayout(False)
         Me.tabTraMantenimiento.PerformLayout()
         Me.gboAcceso.ResumeLayout(False)
@@ -925,21 +927,19 @@ Partial Class forClientes
         Me.gboTraAcceso.PerformLayout()
         Me.gboDatos.ResumeLayout(False)
         Me.gboDatos.PerformLayout()
+        Me.tabTraListado.ResumeLayout(False)
+        Me.tabTraListado.PerformLayout()
+        CType(Me.dgvTraListado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tabTrabajadores.ResumeLayout(False)
         CType(Me.picImagen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents tabTrabajadores As TabControl
-    Friend WithEvents tabTraListado As TabPage
-    Friend WithEvents lblUsuarioTotal As Label
-    Friend WithEvents dgvTraListado As DataGridView
-    Friend WithEvents btnTraBuscar As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents txtTraBuscar As TextBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents tabTraMantenimiento As TabPage
     Friend WithEvents Label12 As Label
     Friend WithEvents btnAgregarImagen As Button
+    Friend WithEvents picImagen As PictureBox
     Friend WithEvents Label10 As Label
     Friend WithEvents txtIdCodigo As TextBox
     Friend WithEvents labEncabezado As Label
@@ -981,5 +981,11 @@ Partial Class forClientes
     Friend WithEvents Label4 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents picImagen As PictureBox
+    Friend WithEvents tabTraListado As TabPage
+    Friend WithEvents lblUsuarioTotal As Label
+    Friend WithEvents dgvTraListado As DataGridView
+    Friend WithEvents btnTraBuscar As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtTraBuscar As TextBox
+    Friend WithEvents tabTrabajadores As TabControl
 End Class

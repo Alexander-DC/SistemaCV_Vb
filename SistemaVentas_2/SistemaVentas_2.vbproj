@@ -109,10 +109,16 @@
     <Compile Include="Presentacion\forLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\formTrabajadores.Designer.vb">
-      <DependentUpon>formTrabajadores.vb</DependentUpon>
+    <Compile Include="Presentacion\forPrueba.Designer.vb">
+      <DependentUpon>forPrueba.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\formTrabajadores.vb">
+    <Compile Include="Presentacion\forPrueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\forTrabajadores.Designer.vb">
+      <DependentUpon>forTrabajadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\forTrabajadores.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -132,8 +138,11 @@
     <EmbeddedResource Include="Presentacion\forLogin.resx">
       <DependentUpon>forLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\formTrabajadores.resx">
-      <DependentUpon>formTrabajadores.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\forPrueba.resx">
+      <DependentUpon>forPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\forTrabajadores.resx">
+      <DependentUpon>forTrabajadores.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

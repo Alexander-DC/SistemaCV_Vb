@@ -290,6 +290,8 @@ Public Class forTrabajadores
                 If Dr(14) = "" Then
                 Else
                     picImagen.Load(Dr(14))
+                    IMAGEN = Dr(14)
+
                 End If
 
                 cboRol.Text = Dr(17)
@@ -436,6 +438,10 @@ Public Class forTrabajadores
 
 
         tabTrabajadores.SelectTab(1)
+
+    End Sub
+
+    Private Sub txtTraBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtTraBuscar.TextChanged
 
     End Sub
 End Class
