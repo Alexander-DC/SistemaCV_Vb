@@ -6,6 +6,19 @@ Public Class forDashboard
     Private ActualBoton As IconButton
     Private Sub forDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         '---------------------------usuario
+        metodoMostrarUsuario()
+        '--------------------------Imagen circular
+        Dim pic As New Drawing2D.GraphicsPath
+        pic.AddEllipse(2, 2, 50, 50)
+        picUsuarioEncabezado.Region = New Region(pic)
+
+        metodoEsconderSubMenu()
+
+        '--------------------------Imagen panel
+
+    End Sub
+
+    Public Sub metodoMostrarUsuario()
         Dim cn As New SqlConnection("server=(Local); database=SistemaVenta5; integrated security=SSPI")
         Dim cmd As New SqlCommand
 
@@ -35,23 +48,13 @@ Public Class forDashboard
                 btnIconSubTrabajadores.Visible = False
                 Exit Sub
         End Select
-        '--------------------------Imagen circular
-        Dim pic As New Drawing2D.GraphicsPath
-        pic.AddEllipse(2, 2, 50, 50)
-        picUsuarioEncabezado.Region = New Region(pic)
-
-        metodoEsconderSubMenu()
-
-        '--------------------------Imagen panel
-
-
-
     End Sub
     Public Sub metodoActivarBoton()
         'IconPictureBox1.IconChar = ActualBoton.IconChar
     End Sub
     Private Sub metodoEsconderSubMenu()
         panMenuUsuarios.Visible = False
+        panMenuProveedores.Visible=False
     End Sub
     Private forActual As Form = Nothing
     Public Sub metodoAbrirFormularioHijo(forHijo As Form)
@@ -91,6 +94,16 @@ Public Class forDashboard
     End Sub
 
     Private Sub panEncabezado_Paint(sender As Object, e As PaintEventArgs) Handles panEncabezado.Paint
+
+
+    End Sub
+
+    Private Sub btnIconMenuProveedores_Click(sender As Object, e As EventArgs) Handles btnIconMenuProveedores.Click
+        metodoMostrarSubMenu(panMenuProveedores)
+    End Sub
+
+    Private Sub btnIconSubListado_Click(sender As Object, e As EventArgs) Handles btnIconSubListado.Click
+        metodoAbrirFormularioHijo(New forProveedorListado)
 
     End Sub
 End Class

@@ -109,6 +109,12 @@
     <Compile Include="Presentacion\forLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\forProveedorListado.Designer.vb">
+      <DependentUpon>forProveedorListado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\forProveedorListado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\forPrueba.Designer.vb">
       <DependentUpon>forPrueba.vb</DependentUpon>
     </Compile>
