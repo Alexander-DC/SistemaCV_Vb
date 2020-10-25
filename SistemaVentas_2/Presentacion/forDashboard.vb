@@ -54,7 +54,7 @@ Public Class forDashboard
     End Sub
     Private Sub metodoEsconderSubMenu()
         panMenuUsuarios.Visible = False
-        panMenuProveedores.Visible=False
+        panMenuProveedores.Visible = False
     End Sub
     Private forActual As Form = Nothing
     Public Sub metodoAbrirFormularioHijo(forHijo As Form)
@@ -69,17 +69,21 @@ Public Class forDashboard
         forHijo.Show()
     End Sub
 
-    Private Sub metodoMostrarSubMenu(subMenu As Panel)
+    Private Sub metodoMostrarSubMenu(subMenu As Panel, Boton As IconButton)
         If subMenu.Visible = False Then
             metodoEsconderSubMenu()
             subMenu.Visible = True
+            Boton.BackColor = Color.FromArgb(0, 128, 128)
+
         Else
             subMenu.Visible = False
+            Boton.BackColor = Color.FromArgb(11, 8, 20)
+
         End If
     End Sub
 
     Private Sub btnIconMenuUsuarios_Click(sender As Object, e As EventArgs) Handles btnIconMenuUsuarios.Click
-        metodoMostrarSubMenu(panMenuUsuarios)
+        metodoMostrarSubMenu(panMenuUsuarios, btnIconMenuUsuarios)
     End Sub
 
     Private Sub btnIconSubClientes_Click(sender As Object, e As EventArgs) Handles btnIconSubClientes.Click
@@ -99,7 +103,7 @@ Public Class forDashboard
     End Sub
 
     Private Sub btnIconMenuProveedores_Click(sender As Object, e As EventArgs) Handles btnIconMenuProveedores.Click
-        metodoMostrarSubMenu(panMenuProveedores)
+        metodoMostrarSubMenu(panMenuProveedores, btnIconMenuProveedores)
     End Sub
 
     Private Sub btnIconSubListado_Click(sender As Object, e As EventArgs) Handles btnIconSubListado.Click
