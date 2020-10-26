@@ -285,4 +285,5 @@ Public Class forClientes
         txtFechaIngreso.Text = Date.Now
 
     End Sub
+
 End Class

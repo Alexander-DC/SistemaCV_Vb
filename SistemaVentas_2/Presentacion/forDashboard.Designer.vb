@@ -23,6 +23,10 @@ Partial Class forDashboard
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.panMenu = New System.Windows.Forms.Panel()
+        Me.panMenuProveedores = New System.Windows.Forms.Panel()
+        Me.btnIconSubAgregar = New FontAwesome.Sharp.IconButton()
+        Me.btnIconSubListado = New FontAwesome.Sharp.IconButton()
+        Me.btnIconMenuProveedores = New FontAwesome.Sharp.IconButton()
         Me.panMenuUsuarios = New System.Windows.Forms.Panel()
         Me.btnIconSubTrabajadores = New FontAwesome.Sharp.IconButton()
         Me.btnIconSubClientes = New FontAwesome.Sharp.IconButton()
@@ -31,24 +35,20 @@ Partial Class forDashboard
         Me.panLogo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.panEncabezado = New System.Windows.Forms.Panel()
-        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
+        Me.IconActualForm = New FontAwesome.Sharp.IconPictureBox()
         Me.picUsuarioEncabezado = New System.Windows.Forms.PictureBox()
         Me.labRol = New System.Windows.Forms.Label()
         Me.labUsuario = New System.Windows.Forms.Label()
         Me.labMenu = New System.Windows.Forms.Label()
         Me.panForHijo = New System.Windows.Forms.Panel()
-        Me.btnIconMenuProveedores = New FontAwesome.Sharp.IconButton()
-        Me.panMenuProveedores = New System.Windows.Forms.Panel()
-        Me.btnIconSubAgregar = New FontAwesome.Sharp.IconButton()
-        Me.btnIconSubListado = New FontAwesome.Sharp.IconButton()
         Me.panMenu.SuspendLayout()
+        Me.panMenuProveedores.SuspendLayout()
         Me.panMenuUsuarios.SuspendLayout()
         Me.panLogo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panEncabezado.SuspendLayout()
-        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IconActualForm, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picUsuarioEncabezado, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.panMenuProveedores.SuspendLayout()
         Me.SuspendLayout()
         '
         'panMenu
@@ -67,6 +67,99 @@ Partial Class forDashboard
         Me.panMenu.Name = "panMenu"
         Me.panMenu.Size = New System.Drawing.Size(260, 937)
         Me.panMenu.TabIndex = 0
+        '
+        'panMenuProveedores
+        '
+        Me.panMenuProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.panMenuProveedores.Controls.Add(Me.btnIconSubAgregar)
+        Me.panMenuProveedores.Controls.Add(Me.btnIconSubListado)
+        Me.panMenuProveedores.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panMenuProveedores.Location = New System.Drawing.Point(0, 467)
+        Me.panMenuProveedores.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.panMenuProveedores.Name = "panMenuProveedores"
+        Me.panMenuProveedores.Size = New System.Drawing.Size(260, 127)
+        Me.panMenuProveedores.TabIndex = 7
+        '
+        'btnIconSubAgregar
+        '
+        Me.btnIconSubAgregar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnIconSubAgregar.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnIconSubAgregar.FlatAppearance.BorderSize = 0
+        Me.btnIconSubAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal
+        Me.btnIconSubAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnIconSubAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnIconSubAgregar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnIconSubAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIconSubAgregar.ForeColor = System.Drawing.Color.White
+        Me.btnIconSubAgregar.IconChar = FontAwesome.Sharp.IconChar.UserTie
+        Me.btnIconSubAgregar.IconColor = System.Drawing.Color.White
+        Me.btnIconSubAgregar.IconSize = 32
+        Me.btnIconSubAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnIconSubAgregar.Location = New System.Drawing.Point(0, 60)
+        Me.btnIconSubAgregar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnIconSubAgregar.Name = "btnIconSubAgregar"
+        Me.btnIconSubAgregar.Padding = New System.Windows.Forms.Padding(35, 0, 21, 0)
+        Me.btnIconSubAgregar.Rotation = 0R
+        Me.btnIconSubAgregar.Size = New System.Drawing.Size(260, 60)
+        Me.btnIconSubAgregar.TabIndex = 6
+        Me.btnIconSubAgregar.Text = "Agregar"
+        Me.btnIconSubAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnIconSubAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnIconSubAgregar.UseVisualStyleBackColor = True
+        '
+        'btnIconSubListado
+        '
+        Me.btnIconSubListado.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnIconSubListado.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnIconSubListado.FlatAppearance.BorderSize = 0
+        Me.btnIconSubListado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal
+        Me.btnIconSubListado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnIconSubListado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnIconSubListado.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnIconSubListado.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIconSubListado.ForeColor = System.Drawing.Color.White
+        Me.btnIconSubListado.IconChar = FontAwesome.Sharp.IconChar.Unity
+        Me.btnIconSubListado.IconColor = System.Drawing.Color.White
+        Me.btnIconSubListado.IconSize = 32
+        Me.btnIconSubListado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnIconSubListado.Location = New System.Drawing.Point(0, 0)
+        Me.btnIconSubListado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnIconSubListado.Name = "btnIconSubListado"
+        Me.btnIconSubListado.Padding = New System.Windows.Forms.Padding(35, 0, 21, 0)
+        Me.btnIconSubListado.Rotation = 0R
+        Me.btnIconSubListado.Size = New System.Drawing.Size(260, 60)
+        Me.btnIconSubListado.TabIndex = 5
+        Me.btnIconSubListado.Text = "Listado"
+        Me.btnIconSubListado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnIconSubListado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnIconSubListado.UseVisualStyleBackColor = True
+        '
+        'btnIconMenuProveedores
+        '
+        Me.btnIconMenuProveedores.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnIconMenuProveedores.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnIconMenuProveedores.FlatAppearance.BorderSize = 0
+        Me.btnIconMenuProveedores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal
+        Me.btnIconMenuProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnIconMenuProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnIconMenuProveedores.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.btnIconMenuProveedores.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIconMenuProveedores.ForeColor = System.Drawing.Color.White
+        Me.btnIconMenuProveedores.IconChar = FontAwesome.Sharp.IconChar.Users
+        Me.btnIconMenuProveedores.IconColor = System.Drawing.Color.White
+        Me.btnIconMenuProveedores.IconSize = 32
+        Me.btnIconMenuProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnIconMenuProveedores.Location = New System.Drawing.Point(0, 407)
+        Me.btnIconMenuProveedores.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnIconMenuProveedores.Name = "btnIconMenuProveedores"
+        Me.btnIconMenuProveedores.Padding = New System.Windows.Forms.Padding(11, 0, 21, 0)
+        Me.btnIconMenuProveedores.Rotation = 0R
+        Me.btnIconMenuProveedores.Size = New System.Drawing.Size(260, 60)
+        Me.btnIconMenuProveedores.TabIndex = 6
+        Me.btnIconMenuProveedores.Text = "Proveedores"
+        Me.btnIconMenuProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnIconMenuProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnIconMenuProveedores.UseVisualStyleBackColor = True
         '
         'panMenuUsuarios
         '
@@ -212,7 +305,7 @@ Partial Class forDashboard
         'panEncabezado
         '
         Me.panEncabezado.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(2, Byte), Integer), CType(CType(6, Byte), Integer))
-        Me.panEncabezado.Controls.Add(Me.IconPictureBox1)
+        Me.panEncabezado.Controls.Add(Me.IconActualForm)
         Me.panEncabezado.Controls.Add(Me.picUsuarioEncabezado)
         Me.panEncabezado.Controls.Add(Me.labRol)
         Me.panEncabezado.Controls.Add(Me.labUsuario)
@@ -224,18 +317,19 @@ Partial Class forDashboard
         Me.panEncabezado.Size = New System.Drawing.Size(1452, 80)
         Me.panEncabezado.TabIndex = 1
         '
-        'IconPictureBox1
+        'IconActualForm
         '
-        Me.IconPictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(2, Byte), Integer), CType(CType(6, Byte), Integer))
-        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Faucet
-        Me.IconPictureBox1.IconColor = System.Drawing.Color.White
-        Me.IconPictureBox1.IconSize = 49
-        Me.IconPictureBox1.Location = New System.Drawing.Point(29, 14)
-        Me.IconPictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.IconPictureBox1.Name = "IconPictureBox1"
-        Me.IconPictureBox1.Size = New System.Drawing.Size(55, 49)
-        Me.IconPictureBox1.TabIndex = 4
-        Me.IconPictureBox1.TabStop = False
+        Me.IconActualForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(2, Byte), Integer), CType(CType(6, Byte), Integer))
+        Me.IconActualForm.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.IconActualForm.IconChar = FontAwesome.Sharp.IconChar.Home
+        Me.IconActualForm.IconColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.IconActualForm.IconSize = 54
+        Me.IconActualForm.Location = New System.Drawing.Point(29, 14)
+        Me.IconActualForm.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.IconActualForm.Name = "IconActualForm"
+        Me.IconActualForm.Size = New System.Drawing.Size(55, 49)
+        Me.IconActualForm.TabIndex = 4
+        Me.IconActualForm.TabStop = False
         '
         'picUsuarioEncabezado
         '
@@ -277,13 +371,13 @@ Partial Class forDashboard
         'labMenu
         '
         Me.labMenu.AutoSize = True
-        Me.labMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labMenu.ForeColor = System.Drawing.Color.White
-        Me.labMenu.Location = New System.Drawing.Point(91, 26)
+        Me.labMenu.Location = New System.Drawing.Point(105, 26)
         Me.labMenu.Name = "labMenu"
-        Me.labMenu.Size = New System.Drawing.Size(59, 20)
+        Me.labMenu.Size = New System.Drawing.Size(78, 29)
         Me.labMenu.TabIndex = 0
-        Me.labMenu.Text = "Label1"
+        Me.labMenu.Text = "Home"
         '
         'panForHijo
         '
@@ -295,99 +389,6 @@ Partial Class forDashboard
         Me.panForHijo.Name = "panForHijo"
         Me.panForHijo.Size = New System.Drawing.Size(1452, 857)
         Me.panForHijo.TabIndex = 2
-        '
-        'btnIconMenuProveedores
-        '
-        Me.btnIconMenuProveedores.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnIconMenuProveedores.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnIconMenuProveedores.FlatAppearance.BorderSize = 0
-        Me.btnIconMenuProveedores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal
-        Me.btnIconMenuProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnIconMenuProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnIconMenuProveedores.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnIconMenuProveedores.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIconMenuProveedores.ForeColor = System.Drawing.Color.White
-        Me.btnIconMenuProveedores.IconChar = FontAwesome.Sharp.IconChar.Users
-        Me.btnIconMenuProveedores.IconColor = System.Drawing.Color.White
-        Me.btnIconMenuProveedores.IconSize = 32
-        Me.btnIconMenuProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIconMenuProveedores.Location = New System.Drawing.Point(0, 407)
-        Me.btnIconMenuProveedores.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnIconMenuProveedores.Name = "btnIconMenuProveedores"
-        Me.btnIconMenuProveedores.Padding = New System.Windows.Forms.Padding(11, 0, 21, 0)
-        Me.btnIconMenuProveedores.Rotation = 0R
-        Me.btnIconMenuProveedores.Size = New System.Drawing.Size(260, 60)
-        Me.btnIconMenuProveedores.TabIndex = 6
-        Me.btnIconMenuProveedores.Text = "Proveedores"
-        Me.btnIconMenuProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIconMenuProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnIconMenuProveedores.UseVisualStyleBackColor = True
-        '
-        'panMenuProveedores
-        '
-        Me.panMenuProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.panMenuProveedores.Controls.Add(Me.btnIconSubAgregar)
-        Me.panMenuProveedores.Controls.Add(Me.btnIconSubListado)
-        Me.panMenuProveedores.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panMenuProveedores.Location = New System.Drawing.Point(0, 467)
-        Me.panMenuProveedores.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.panMenuProveedores.Name = "panMenuProveedores"
-        Me.panMenuProveedores.Size = New System.Drawing.Size(260, 127)
-        Me.panMenuProveedores.TabIndex = 7
-        '
-        'btnIconSubAgregar
-        '
-        Me.btnIconSubAgregar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnIconSubAgregar.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnIconSubAgregar.FlatAppearance.BorderSize = 0
-        Me.btnIconSubAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal
-        Me.btnIconSubAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnIconSubAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnIconSubAgregar.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnIconSubAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIconSubAgregar.ForeColor = System.Drawing.Color.White
-        Me.btnIconSubAgregar.IconChar = FontAwesome.Sharp.IconChar.UserTie
-        Me.btnIconSubAgregar.IconColor = System.Drawing.Color.White
-        Me.btnIconSubAgregar.IconSize = 32
-        Me.btnIconSubAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIconSubAgregar.Location = New System.Drawing.Point(0, 60)
-        Me.btnIconSubAgregar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnIconSubAgregar.Name = "btnIconSubAgregar"
-        Me.btnIconSubAgregar.Padding = New System.Windows.Forms.Padding(35, 0, 21, 0)
-        Me.btnIconSubAgregar.Rotation = 0R
-        Me.btnIconSubAgregar.Size = New System.Drawing.Size(260, 60)
-        Me.btnIconSubAgregar.TabIndex = 6
-        Me.btnIconSubAgregar.Text = "Agregar"
-        Me.btnIconSubAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIconSubAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnIconSubAgregar.UseVisualStyleBackColor = True
-        '
-        'btnIconSubListado
-        '
-        Me.btnIconSubListado.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnIconSubListado.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnIconSubListado.FlatAppearance.BorderSize = 0
-        Me.btnIconSubListado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal
-        Me.btnIconSubListado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnIconSubListado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnIconSubListado.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.btnIconSubListado.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIconSubListado.ForeColor = System.Drawing.Color.White
-        Me.btnIconSubListado.IconChar = FontAwesome.Sharp.IconChar.Unity
-        Me.btnIconSubListado.IconColor = System.Drawing.Color.White
-        Me.btnIconSubListado.IconSize = 32
-        Me.btnIconSubListado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIconSubListado.Location = New System.Drawing.Point(0, 0)
-        Me.btnIconSubListado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnIconSubListado.Name = "btnIconSubListado"
-        Me.btnIconSubListado.Padding = New System.Windows.Forms.Padding(35, 0, 21, 0)
-        Me.btnIconSubListado.Rotation = 0R
-        Me.btnIconSubListado.Size = New System.Drawing.Size(260, 60)
-        Me.btnIconSubListado.TabIndex = 5
-        Me.btnIconSubListado.Text = "Listado"
-        Me.btnIconSubListado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnIconSubListado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnIconSubListado.UseVisualStyleBackColor = True
         '
         'forDashboard
         '
@@ -402,14 +403,14 @@ Partial Class forDashboard
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Dashboard"
         Me.panMenu.ResumeLayout(False)
+        Me.panMenuProveedores.ResumeLayout(False)
         Me.panMenuUsuarios.ResumeLayout(False)
         Me.panLogo.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panEncabezado.ResumeLayout(False)
         Me.panEncabezado.PerformLayout()
-        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IconActualForm, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picUsuarioEncabezado, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.panMenuProveedores.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -429,7 +430,7 @@ Partial Class forDashboard
     Friend WithEvents btnIconSubTrabajadores As FontAwesome.Sharp.IconButton
     Friend WithEvents btnIconSubClientes As FontAwesome.Sharp.IconButton
     Friend WithEvents btnIconMenuUsuarios As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconPictureBox1 As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents IconActualForm As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents panMenuProveedores As Panel
     Friend WithEvents btnIconSubAgregar As FontAwesome.Sharp.IconButton
     Friend WithEvents btnIconSubListado As FontAwesome.Sharp.IconButton

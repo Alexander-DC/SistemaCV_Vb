@@ -22,9 +22,9 @@ Partial Class forClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.tabTrabajadores = New System.Windows.Forms.TabControl()
         Me.tabTraListado = New System.Windows.Forms.TabPage()
         Me.lblUsuarioTotal = New System.Windows.Forms.Label()
@@ -83,7 +83,7 @@ Partial Class forClientes
         Me.tabTrabajadores.Controls.Add(Me.tabTraMantenimiento)
         Me.tabTrabajadores.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tabTrabajadores.Location = New System.Drawing.Point(16, 24)
-        Me.tabTrabajadores.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tabTrabajadores.Margin = New System.Windows.Forms.Padding(2)
         Me.tabTrabajadores.Name = "tabTrabajadores"
         Me.tabTrabajadores.SelectedIndex = 0
         Me.tabTrabajadores.Size = New System.Drawing.Size(1049, 638)
@@ -97,10 +97,10 @@ Partial Class forClientes
         Me.tabTraListado.Controls.Add(Me.Label1)
         Me.tabTraListado.Controls.Add(Me.txtTraBuscar)
         Me.tabTraListado.Location = New System.Drawing.Point(4, 26)
-        Me.tabTraListado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tabTraListado.Margin = New System.Windows.Forms.Padding(2)
         Me.tabTraListado.Name = "tabTraListado"
-        Me.tabTraListado.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.tabTraListado.Size = New System.Drawing.Size(1020, 608)
+        Me.tabTraListado.Padding = New System.Windows.Forms.Padding(2)
+        Me.tabTraListado.Size = New System.Drawing.Size(1041, 608)
         Me.tabTraListado.TabIndex = 0
         Me.tabTraListado.Text = "Listado"
         '
@@ -126,37 +126,37 @@ Partial Class forClientes
         Me.dgvTraListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
         Me.dgvTraListado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvTraListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(204, Byte), Integer))
-        DataGridViewCellStyle22.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle22.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvTraListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle22
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(204, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvTraListado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvTraListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvTraListado.EnableHeadersVisualStyles = False
         Me.dgvTraListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(183, Byte), Integer))
         Me.dgvTraListado.Location = New System.Drawing.Point(27, 91)
-        Me.dgvTraListado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgvTraListado.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvTraListado.Name = "dgvTraListado"
         Me.dgvTraListado.ReadOnly = True
         Me.dgvTraListado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
-        DataGridViewCellStyle23.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(183, Byte), Integer))
-        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvTraListado.RowHeadersDefaultCellStyle = DataGridViewCellStyle23
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(183, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvTraListado.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvTraListado.RowHeadersWidth = 51
-        DataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
-        DataGridViewCellStyle24.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle24.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(183, Byte), Integer))
-        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White
-        Me.dgvTraListado.RowsDefaultCellStyle = DataGridViewCellStyle24
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(91, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(183, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
+        Me.dgvTraListado.RowsDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvTraListado.RowTemplate.Height = 24
         Me.dgvTraListado.Size = New System.Drawing.Size(968, 460)
         Me.dgvTraListado.TabIndex = 7
@@ -180,7 +180,7 @@ Partial Class forClientes
         Me.txtTraBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTraBuscar.ForeColor = System.Drawing.SystemColors.Window
         Me.txtTraBuscar.Location = New System.Drawing.Point(27, 46)
-        Me.txtTraBuscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtTraBuscar.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTraBuscar.Name = "txtTraBuscar"
         Me.txtTraBuscar.Size = New System.Drawing.Size(422, 19)
         Me.txtTraBuscar.TabIndex = 5
@@ -195,9 +195,9 @@ Partial Class forClientes
         Me.tabTraMantenimiento.Controls.Add(Me.gboAcceso)
         Me.tabTraMantenimiento.Controls.Add(Me.gboDatos)
         Me.tabTraMantenimiento.Location = New System.Drawing.Point(4, 26)
-        Me.tabTraMantenimiento.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tabTraMantenimiento.Margin = New System.Windows.Forms.Padding(2)
         Me.tabTraMantenimiento.Name = "tabTraMantenimiento"
-        Me.tabTraMantenimiento.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tabTraMantenimiento.Padding = New System.Windows.Forms.Padding(2)
         Me.tabTraMantenimiento.Size = New System.Drawing.Size(1041, 608)
         Me.tabTraMantenimiento.TabIndex = 1
         Me.tabTraMantenimiento.Text = "Mantenimiento"
@@ -209,7 +209,7 @@ Partial Class forClientes
         Me.txtIdCodigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIdCodigo.ForeColor = System.Drawing.SystemColors.Window
         Me.txtIdCodigo.Location = New System.Drawing.Point(256, 106)
-        Me.txtIdCodigo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtIdCodigo.Margin = New System.Windows.Forms.Padding(2)
         Me.txtIdCodigo.Name = "txtIdCodigo"
         Me.txtIdCodigo.Size = New System.Drawing.Size(264, 19)
         Me.txtIdCodigo.TabIndex = 13
@@ -263,9 +263,9 @@ Partial Class forClientes
         Me.gboAcceso.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gboAcceso.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.gboAcceso.Location = New System.Drawing.Point(696, 67)
-        Me.gboAcceso.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gboAcceso.Margin = New System.Windows.Forms.Padding(2)
         Me.gboAcceso.Name = "gboAcceso"
-        Me.gboAcceso.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gboAcceso.Padding = New System.Windows.Forms.Padding(2)
         Me.gboAcceso.Size = New System.Drawing.Size(326, 210)
         Me.gboAcceso.TabIndex = 2
         Me.gboAcceso.TabStop = False
@@ -286,7 +286,7 @@ Partial Class forClientes
         Me.btnIconLimpiar.IconColor = System.Drawing.Color.White
         Me.btnIconLimpiar.IconSize = 32
         Me.btnIconLimpiar.Location = New System.Drawing.Point(23, 167)
-        Me.btnIconLimpiar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnIconLimpiar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIconLimpiar.Name = "btnIconLimpiar"
         Me.btnIconLimpiar.Rotation = 0R
         Me.btnIconLimpiar.Size = New System.Drawing.Size(273, 33)
@@ -311,7 +311,7 @@ Partial Class forClientes
         Me.btnIconBuscar.IconSize = 32
         Me.btnIconBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnIconBuscar.Location = New System.Drawing.Point(173, 125)
-        Me.btnIconBuscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnIconBuscar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIconBuscar.Name = "btnIconBuscar"
         Me.btnIconBuscar.Rotation = 0R
         Me.btnIconBuscar.Size = New System.Drawing.Size(123, 33)
@@ -337,7 +337,7 @@ Partial Class forClientes
         Me.btnIconEliminar.IconSize = 32
         Me.btnIconEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnIconEliminar.Location = New System.Drawing.Point(23, 124)
-        Me.btnIconEliminar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnIconEliminar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIconEliminar.Name = "btnIconEliminar"
         Me.btnIconEliminar.Rotation = 0R
         Me.btnIconEliminar.Size = New System.Drawing.Size(123, 33)
@@ -363,7 +363,7 @@ Partial Class forClientes
         Me.btnIconGuardar.IconSize = 32
         Me.btnIconGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnIconGuardar.Location = New System.Drawing.Point(173, 37)
-        Me.btnIconGuardar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnIconGuardar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIconGuardar.Name = "btnIconGuardar"
         Me.btnIconGuardar.Rotation = 0R
         Me.btnIconGuardar.Size = New System.Drawing.Size(123, 33)
@@ -389,7 +389,7 @@ Partial Class forClientes
         Me.btnIconCancelar.IconSize = 32
         Me.btnIconCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnIconCancelar.Location = New System.Drawing.Point(173, 83)
-        Me.btnIconCancelar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnIconCancelar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIconCancelar.Name = "btnIconCancelar"
         Me.btnIconCancelar.Rotation = 0R
         Me.btnIconCancelar.Size = New System.Drawing.Size(123, 33)
@@ -415,7 +415,7 @@ Partial Class forClientes
         Me.btnIconEditar.IconSize = 32
         Me.btnIconEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnIconEditar.Location = New System.Drawing.Point(23, 84)
-        Me.btnIconEditar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnIconEditar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIconEditar.Name = "btnIconEditar"
         Me.btnIconEditar.Rotation = 0R
         Me.btnIconEditar.Size = New System.Drawing.Size(123, 33)
@@ -441,7 +441,7 @@ Partial Class forClientes
         Me.btnIconNuevo.IconSize = 32
         Me.btnIconNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnIconNuevo.Location = New System.Drawing.Point(23, 37)
-        Me.btnIconNuevo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnIconNuevo.Margin = New System.Windows.Forms.Padding(2)
         Me.btnIconNuevo.Name = "btnIconNuevo"
         Me.btnIconNuevo.Rotation = 0R
         Me.btnIconNuevo.Size = New System.Drawing.Size(123, 33)
@@ -480,9 +480,9 @@ Partial Class forClientes
         Me.gboDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.gboDatos.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.gboDatos.Location = New System.Drawing.Point(17, 148)
-        Me.gboDatos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gboDatos.Margin = New System.Windows.Forms.Padding(2)
         Me.gboDatos.Name = "gboDatos"
-        Me.gboDatos.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gboDatos.Padding = New System.Windows.Forms.Padding(2)
         Me.gboDatos.Size = New System.Drawing.Size(664, 321)
         Me.gboDatos.TabIndex = 0
         Me.gboDatos.TabStop = False
@@ -496,7 +496,7 @@ Partial Class forClientes
         Me.cboTipo.FormattingEnabled = True
         Me.cboTipo.Items.AddRange(New Object() {"Cliente"})
         Me.cboTipo.Location = New System.Drawing.Point(498, 72)
-        Me.cboTipo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cboTipo.Margin = New System.Windows.Forms.Padding(2)
         Me.cboTipo.Name = "cboTipo"
         Me.cboTipo.Size = New System.Drawing.Size(152, 25)
         Me.cboTipo.TabIndex = 25
@@ -508,7 +508,7 @@ Partial Class forClientes
         Me.txtDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDireccion.ForeColor = System.Drawing.SystemColors.Window
         Me.txtDireccion.Location = New System.Drawing.Point(498, 153)
-        Me.txtDireccion.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtDireccion.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(151, 19)
         Me.txtDireccion.TabIndex = 24
@@ -534,7 +534,7 @@ Partial Class forClientes
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmail.ForeColor = System.Drawing.SystemColors.Window
         Me.txtEmail.Location = New System.Drawing.Point(164, 273)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(277, 19)
         Me.txtEmail.TabIndex = 22
@@ -560,7 +560,7 @@ Partial Class forClientes
         Me.txtFechaIngreso.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFechaIngreso.ForeColor = System.Drawing.SystemColors.Window
         Me.txtFechaIngreso.Location = New System.Drawing.Point(164, 234)
-        Me.txtFechaIngreso.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtFechaIngreso.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFechaIngreso.Name = "txtFechaIngreso"
         Me.txtFechaIngreso.Size = New System.Drawing.Size(278, 19)
         Me.txtFechaIngreso.TabIndex = 20
@@ -586,7 +586,7 @@ Partial Class forClientes
         Me.txtTel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTel2.ForeColor = System.Drawing.SystemColors.Window
         Me.txtTel2.Location = New System.Drawing.Point(498, 192)
-        Me.txtTel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtTel2.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTel2.Name = "txtTel2"
         Me.txtTel2.Size = New System.Drawing.Size(151, 19)
         Me.txtTel2.TabIndex = 16
@@ -598,7 +598,7 @@ Partial Class forClientes
         Me.txtTel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTel1.ForeColor = System.Drawing.SystemColors.Window
         Me.txtTel1.Location = New System.Drawing.Point(164, 194)
-        Me.txtTel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtTel1.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTel1.Name = "txtTel1"
         Me.txtTel1.Size = New System.Drawing.Size(142, 19)
         Me.txtTel1.TabIndex = 15
@@ -610,7 +610,7 @@ Partial Class forClientes
         Me.txtNDoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNDoc.ForeColor = System.Drawing.SystemColors.Window
         Me.txtNDoc.Location = New System.Drawing.Point(498, 115)
-        Me.txtNDoc.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNDoc.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNDoc.Name = "txtNDoc"
         Me.txtNDoc.Size = New System.Drawing.Size(151, 19)
         Me.txtNDoc.TabIndex = 14
@@ -637,7 +637,7 @@ Partial Class forClientes
         Me.cboTipoDoc.FormattingEnabled = True
         Me.cboTipoDoc.Items.AddRange(New Object() {"DNI"})
         Me.cboTipoDoc.Location = New System.Drawing.Point(164, 106)
-        Me.cboTipoDoc.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cboTipoDoc.Margin = New System.Windows.Forms.Padding(2)
         Me.cboTipoDoc.Name = "cboTipoDoc"
         Me.cboTipoDoc.Size = New System.Drawing.Size(143, 25)
         Me.cboTipoDoc.TabIndex = 13
@@ -692,7 +692,7 @@ Partial Class forClientes
         Me.cboGenero.FormattingEnabled = True
         Me.cboGenero.Items.AddRange(New Object() {"Hombre", "Mujer"})
         Me.cboGenero.Location = New System.Drawing.Point(164, 153)
-        Me.cboGenero.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cboGenero.Margin = New System.Windows.Forms.Padding(2)
         Me.cboGenero.Name = "cboGenero"
         Me.cboGenero.Size = New System.Drawing.Size(143, 25)
         Me.cboGenero.TabIndex = 12
@@ -704,7 +704,7 @@ Partial Class forClientes
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNombre.ForeColor = System.Drawing.SystemColors.Window
         Me.txtNombre.Location = New System.Drawing.Point(164, 76)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(142, 19)
         Me.txtNombre.TabIndex = 11
@@ -744,7 +744,7 @@ Partial Class forClientes
         Me.txtApeMaterno.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtApeMaterno.ForeColor = System.Drawing.SystemColors.Window
         Me.txtApeMaterno.Location = New System.Drawing.Point(498, 35)
-        Me.txtApeMaterno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtApeMaterno.Margin = New System.Windows.Forms.Padding(2)
         Me.txtApeMaterno.Name = "txtApeMaterno"
         Me.txtApeMaterno.Size = New System.Drawing.Size(151, 19)
         Me.txtApeMaterno.TabIndex = 10
@@ -756,7 +756,7 @@ Partial Class forClientes
         Me.txtApePaterno.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtApePaterno.ForeColor = System.Drawing.SystemColors.Window
         Me.txtApePaterno.Location = New System.Drawing.Point(164, 37)
-        Me.txtApePaterno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtApePaterno.Margin = New System.Windows.Forms.Padding(2)
         Me.txtApePaterno.Name = "txtApePaterno"
         Me.txtApePaterno.Size = New System.Drawing.Size(142, 19)
         Me.txtApePaterno.TabIndex = 7
@@ -810,7 +810,7 @@ Partial Class forClientes
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(45, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1076, 687)
         Me.Controls.Add(Me.tabTrabajadores)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "forClientes"
         Me.Text = "forClientes"
         Me.tabTrabajadores.ResumeLayout(False)
