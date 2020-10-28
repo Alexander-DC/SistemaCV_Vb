@@ -27,7 +27,7 @@ Public Class forProveedorListado
         cn.Close()
 
     End Sub
-    Private Function funcionListadoTrabajadores() As DataTable
+    Public Function funcionListadoTrabajadores() As DataTable
         Dim dtTrabajadores As New DataTable
 
         Dim cn As New SqlConnection("server=(Local); database=SistemaVenta5; integrated security=SSPI")
@@ -96,5 +96,42 @@ Public Class forProveedorListado
 
         End If
 
+    End Sub
+
+    Private Sub btnIconEditar_Click(sender As Object, e As EventArgs) Handles btnIconEditar.Click
+
+        Dim frm As New forProveedorAgregar
+        frm.txtAccion.Text = 2
+        frm.txtIdCodigo.Visible = True
+        frm.labCodigo.Visible = True
+
+        frm.txtIdCodigo.Text = dgvTraListado.CurrentRow.Cells(0).Value.ToString
+        frm.cboTipo.Text = dgvTraListado.CurrentRow.Cells(1).Value.ToString
+        frm.txtEmpresaNombre.Text = dgvTraListado.CurrentRow.Cells(2).Value.ToString
+        frm.txtNombre.Text = dgvTraListado.CurrentRow.Cells(3).Value.ToString
+        frm.txtApePaterno.Text = dgvTraListado.CurrentRow.Cells(4).Value.ToString
+        frm.txtApeMaterno.Text = dgvTraListado.CurrentRow.Cells(5).Value.ToString
+        frm.cboGenero.Text = dgvTraListado.CurrentRow.Cells(6).Value.ToString
+        frm.cboTipoDoc.Text = dgvTraListado.CurrentRow.Cells(7).Value.ToString
+        frm.txtNDoc.Text = dgvTraListado.CurrentRow.Cells(8).Value.ToString
+        frm.txtDireccion.Text = dgvTraListado.CurrentRow.Cells(9).Value.ToString
+        frm.txtTel1.Text = dgvTraListado.CurrentRow.Cells(10).Value.ToString
+        frm.txtTel2.Text = dgvTraListado.CurrentRow.Cells(11).Value.ToString
+        frm.txtEmail.Text = dgvTraListado.CurrentRow.Cells(12).Value.ToString
+        frm.txtFechaIngreso.Text = dgvTraListado.CurrentRow.Cells(13).Value.ToString
+
+        frm.labEncabezado.Text = "Modificar Proveedor"
+        frm.ShowDialog()
+
+    End Sub
+
+    Private Sub btnIconNuevo_Click(sender As Object, e As EventArgs) Handles btnIconNuevo.Click
+        Dim frm As New forProveedorAgregar
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub btnIconActualizar_Click(sender As Object, e As EventArgs) Handles btnIconActualizar.Click
+        metodoUsuarioTotal()
+        dgvTraListado.DataSource = funcionListadoTrabajadores()
     End Sub
 End Class

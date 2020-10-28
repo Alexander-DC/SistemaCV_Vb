@@ -156,6 +156,9 @@
     <EmbeddedResource Include="Presentacion\forLogin.resx">
       <DependentUpon>forLogin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\forProveedorAgregar.resx">
+      <DependentUpon>forProveedorAgregar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\forProveedorListado.resx">
       <DependentUpon>forProveedorListado.vb</DependentUpon>
     </EmbeddedResource>
