@@ -14,6 +14,11 @@ Public Class forLogin
         txtClave.Text = ""
     End Sub
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        metodoIngresarLogin()
+
+    End Sub
+
+    Public Sub metodoIngresarLogin()
         Dim cn As New SqlConnection("server=(Local); database=SistemaVenta5; integrated security=SSPI")
         Dim cmd As New SqlCommand
 
@@ -63,10 +68,6 @@ Public Class forLogin
         End If
         'Cerrar conexion
         cn.Close()
-
-    End Sub
-
-    Private Sub forLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

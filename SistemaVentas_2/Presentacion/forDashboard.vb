@@ -57,6 +57,8 @@ Public Class forDashboard
         btnIconMenuUsuarios.BackColor = Color.FromArgb(11, 8, 20)
         panMenuProveedores.Visible = False
         btnIconMenuProveedores.BackColor = Color.FromArgb(11, 8, 20)
+        panMenuSeguridad.Visible = False
+        btnIconMenuSeguridad.BackColor = Color.FromArgb(11, 8, 20)
     End Sub
 
     'Abre formulario hijo del SubBoton
@@ -122,4 +124,11 @@ Public Class forDashboard
         metodoAbrirFormularioHijo(New forProveedorAgregar, btnIconSubAgregar)
     End Sub
 
+    Private Sub btnIconMenuSeguridad_Click(sender As Object, e As EventArgs) Handles btnIconMenuSeguridad.Click
+        metodoMostrarSubMenu(panMenuSeguridad, btnIconMenuSeguridad)
+    End Sub
+
+    Private Sub btnIconSubBackup_Click(sender As Object, e As EventArgs) Handles btnIconSubBackup.Click
+        metodoAbrirFormularioHijo(New forSeguridadBackup, btnIconSubBackup)
+    End Sub
 End Class

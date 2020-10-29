@@ -17,3 +17,4 @@ C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVent
 C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.forPrueba.resources
 C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.forProveedorListado.resources
 C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.forProveedorAgregar.resources
+C:\Users\Asus\source\repos\SistemaVentas_2\SistemaVentas_2\obj\Debug\SistemaVentas_2.forSeguridadBackup.resources

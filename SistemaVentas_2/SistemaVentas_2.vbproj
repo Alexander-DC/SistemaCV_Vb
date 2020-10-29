@@ -127,6 +127,12 @@
     <Compile Include="Presentacion\forPrueba.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\forSeguridadBackup.Designer.vb">
+      <DependentUpon>forSeguridadBackup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\forSeguridadBackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\forSubDashboard.Designer.vb">
       <DependentUpon>forSubDashboard.vb</DependentUpon>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\forPrueba.resx">
       <DependentUpon>forPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\forSeguridadBackup.resx">
+      <DependentUpon>forSeguridadBackup.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\forTrabajadores.resx">
       <DependentUpon>forTrabajadores.vb</DependentUpon>
